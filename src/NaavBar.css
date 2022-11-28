@@ -1,0 +1,94 @@
+.NavDiv{
+    display: flex;
+    padding-top: 1%;
+    padding-left: 1%;
+    background-color: #0b121b;
+}
+.flex{
+    display: flex;
+    column-gap: 6%;
+    width: 35%;
+}
+@media only screen and (max-width: 1050px) {
+    div.grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+
+  }
+  @media only screen and (max-width: 742px) {
+    div.grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+  }
+  @media only screen and (max-width:440px) {
+    div.grid-container {
+        display: grid;
+        grid-template-columns:  auto;
+      }
+  }
+
+.Navdiv1{
+    margin-right: 2%;
+}
+.Navdiv2{
+    margin-left: 20%;
+}
+.SearchBar{
+    margin-bottom: 5%;
+    /* padding-left: 10%; */
+    /* padding-right: 60%; */
+    height: 35px;
+    width: 55%;
+}
+.select{
+    background-color: #f3f3f3;
+    height: 42px;
+    width: 60px;
+}
+.select1{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 10%;
+    /* padding-right: 2%; */
+}
+.navlink{
+    margin-left: 1%;
+}
+.navlink:hover{
+    border: solid white 1px;
+}
+.searchlogodiv{
+     /* width: 20%;  */
+    /* margin-left: 100%;  */
+    /* margin-top: 2px; */
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* SECOND Navbar styling */
+.navRow2{
+    background-color: #232f3e;
+    padding-top: 0.3%;
+    
+}
+ul{
+    margin-top: 1%;
+    /* display: flex; */
+    padding-bottom: 1%;
+}
+li{
+    display: inline;
+    color: white;
+    margin-left: 3%;
+}
+li:hover{
+    cursor: pointer;
+    
+}
+.NavRow2lastLink{
+    margin-left: 45%;
+}

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React, { createContext, useState } from 'react'
+import { Navbar } from './Navbar';
+import { Route, Routes } from 'react-router-dom';
+import { SignIn } from './SignIn';
+import { SignUp } from './SignUp';
+import { Cart } from './Cart';
+export const DataContext=createContext()
 function App() {
+  const[cartArr,setCartArr]=useState([])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <DataContext.Provider value={{cartArr,setCartArr}}>
+    <Routes>
+      <Route path='/' element={<Navbar/>}/>
+      <Route path='/SignIn' element={<SignIn/>}/>
+      <Route path='/SignUp' element={<SignUp/>}/>
+      <Route path='/Cart' element={<Cart/>}></Route>
+    </Routes>
+    </DataContext.Provider>
+    {/* <Carousel/>
+    <ProductView/>
+    <Footer/> */}
     </div>
   );
 }

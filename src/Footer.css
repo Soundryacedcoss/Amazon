@@ -1,0 +1,17 @@
+.Flex{
+    padding-top: 2%;
+    display: flex;
+    column-gap: 9%;
+    text-align: center;
+    margin-left: 25%;
+}
+.Footer{
+    background-color: black;
+    color: white;
+    margin-top: 2%;
+}
+.AmazonFooterLogo{
+    width: 20%;
+    /* float: left; */
+    margin-left: 35%;
+}
